@@ -1,3 +1,11 @@
+import { Button, buttonVariants } from "@/components/ui/button";
+
 export default function Home() {
-  return <h1>Welcome to My Next.js App!</h1>;
+  return (
+    <div>
+      Hi I am Ashwin 
+      <br/>
+      <Button>Hello</Button>
+    </div>
+  )
 }
