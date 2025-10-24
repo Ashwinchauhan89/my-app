@@ -1,19 +1,32 @@
 import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/nextjs'
+import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const Header = () => {
     return (
         <header>
             <nav>
-
+                <Link href={"/"}>
+                    <Image
+                        src={"/logo.png"}
+                        alt="SkillSync Logo"
+                        width={200}
+                        height={60}
+                        className="h-12 py-1 w-auto object-contain"
+                    />
+                </Link>
+                
             </nav>
 
-            
+
+
+
             <SignedOut>
-              <SignInButton />
+                <SignInButton />
             </SignedOut>
             <SignedIn>
-              <UserButton />
+                <UserButton />
             </SignedIn>
         </header>
     )
