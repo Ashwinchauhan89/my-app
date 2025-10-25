@@ -1,7 +1,13 @@
+import { industries } from "@/data/industries";
+import OnboardingForm from "./_components/onboarding-form";
+
 const Onboarding = () => {
   return (
-    <div> Onboarding</div>
-  )
-}
+    <main> 
+       <OnboardingForm industries ={industries} />
+    </main>
+   )
+  };
+  
 
 export default Onboarding
