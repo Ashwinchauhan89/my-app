@@ -34,3 +34,80 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+```markdown
+My-app/
+│
+├── actions/
+├── app/
+│   ├── (auth)/
+│   │   ├── sign-in/
+│   │   │   └── [[...sign-in]]/
+│   │   ├── sign-up/
+│   │   │   └── [[...sign-up]]/
+│   │   └── layout.js
+│   ├── (main)/
+│   │   ├── ai-cover-letter/
+│   │   │   ├── [id]/
+│   │   │   ├── _components/
+│   │   │   ├── new/
+│   │   │   └── page.jsx
+│   │   ├── dashboard/
+│   │   │   ├── _component/
+│   │   │   ├── layout.js
+│   │   │   └── page.jsx
+│   │   ├── interview/
+│   │   │   ├── _components/
+│   │   │   ├── mock/
+│   │   │   ├── layout.js
+│   │   │   └── page.jsx
+│   │   ├── onboarding/
+│   │   │   ├── _components/
+│   │   │   └── page.jsx
+│   │   ├── resume/
+│   │   │   ├── _components/
+│   │   │   └── page.jsx
+│   │   └── layout.jsx
+│   ├── api/
+│   │   └── inngest/
+│   ├── lib/
+│   ├── favicon.ico
+│   ├── globals.css
+│   ├── layout.js
+│   ├── not-found.jsx
+│   └── page.js
+├── components/
+│   ├── ui/
+│   ├── header.jsx
+│   ├── hero.jsx
+│   └── theme-provider.jsx
+├── data/
+├── hooks/
+├── lib/
+│   ├── inngest/
+│   ├── checkUser.js
+│   ├── prisma.js
+│   └── utils.js
+├── prisma/
+│   ├── migrations/
+│   └── schema.prisma
+├── public/
+│   ├── banner.jpeg
+│   ├── banner2.jpeg
+│   ├── banner3.jpeg
+│   └── logo.png
+├── .eslintrc.json
+├── .gitignore
+├── README.md
+├── components.json
+├── eslint.config.mjs
+├── jsconfig.json
+├── middleware.js
+├── next.config.mjs
+├── package-lock.json
+├── package.json
+├── postcss.config.mjs
+└── tailwind.config.mjs
+
+```
