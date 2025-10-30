@@ -14,7 +14,7 @@ const Header = async() => {
             <nav className="container mx-auto px-4 h-16 flex items-center justify-between">
                 <Link href={"/"}>
                     <Image
-                        src={"/logo.png"}
+                        src={"/logo4.png"}
                         alt="SkillSync Logo"
                         width={200}
                         height={60}
