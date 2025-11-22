@@ -2,6 +2,8 @@
 
 import { db } from "@/lib/prisma";
 import { auth } from "@clerk/nextjs/server";
+import { generateAIInsights } from "./dashboard";
+import { revalidatePath } from "next/cache";
 
 
 
@@ -44,22 +46,7 @@ export async function updateUser(data) {
         }
 
 
-        //Ai Can BE Replaced this one 
-        // if(!industryInsight){
-        //   industryInsight = await tx.industryInsight.create({
-        //     data: {
-        //       industry: data.industry,
-        //       salaryRanges : [],
-        //       growthRate : [],
-        //       demandLevel : "MEDIUM",
-        //       topSkills : [],
-        //       marketOutlook : "NETURAL",
-        //       keyTrends : [],
-        //       recommendedSkills : [],
-               
-        //     }
-        //   })
-        // }
+        
 
         // Now update the user
         const updatedUser = await tx.user.update({
@@ -85,7 +72,7 @@ export async function updateUser(data) {
     return result.user;
   } catch (error) {
     console.error("Error updating user and industry:", error.message);
-    throw new Error("Failed to update profile");
+    throw new Error("Failed to update profile" + error.message);
   }
 }
 
