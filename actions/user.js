@@ -21,6 +21,8 @@ export async function updateUser(data) {
     // Start a transaction to handle both operations
     const result = await db.$transaction(
       async (tx) => {
+
+
         // First check if industry exists
         let industryInsight = await tx.industryInsight.findUnique({
           where: {
@@ -40,6 +42,24 @@ export async function updateUser(data) {
             },
           });
         }
+
+
+        //Ai Can BE Replaced this one 
+        // if(!industryInsight){
+        //   industryInsight = await tx.industryInsight.create({
+        //     data: {
+        //       industry: data.industry,
+        //       salaryRanges : [],
+        //       growthRate : [],
+        //       demandLevel : "MEDIUM",
+        //       topSkills : [],
+        //       marketOutlook : "NETURAL",
+        //       keyTrends : [],
+        //       recommendedSkills : [],
+               
+        //     }
+        //   })
+        // }
 
         // Now update the user
         const updatedUser = await tx.user.update({
