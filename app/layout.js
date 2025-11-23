@@ -5,6 +5,7 @@ import Header from "@/components/header";
 import { ClerkProvider } from "@clerk/nextjs";
 import { dark } from "@clerk/themes";
 import { Toaster } from "sonner";
+import Footer from "@/components/footer";
 
 
 const inter = Inter({subsets: ["latin"]});
@@ -38,11 +39,12 @@ export default function RootLayout({ children }) {
           </main>
 
           {/*Footer */}
-          <footer className="bg-muted/50 py-10">
+          {/* <footer className="bg-muted/50 py-10">
             <div className="container mx-auto px-4 text-center text-gray-200">
               <p>Made by Ashwin.All right Reverserved</p>
             </div>
-          </footer>
+          </footer> */}
+          <Footer />
         </ThemeProvider>
 
       </body>
