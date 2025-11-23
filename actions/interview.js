@@ -12,8 +12,9 @@ const model = genAI.getGenerativeModel({
   model: "gemini-2.0-flash",
 });
 
-
-// generateQuiz
+// ----------------------
+// // generateQuiz
+// ----------------------------
 export async function generateQuiz() {
   const { userId } = await auth();
   if (!userId) throw new Error("Unauthorized");
