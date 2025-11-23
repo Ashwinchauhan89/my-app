@@ -20,10 +20,10 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold text-white mb-3">Quick Links</h3>
           <ul className="space-y-2 text-sm">
-            <li><Link href="/" className="hover:text-white">Home</Link></li>
-            <li><Link href="/resume-builder" className="hover:text-white">AI Resume Builder</Link></li>
-            <li><Link href="/cover-letter" className="hover:text-white">AI Cover Letter</Link></li>
-            <li><Link href="/job-recommender" className="hover:text-white">Job Recommender</Link></li>
+            <li><Link href="#" className="hover:text-white">Home</Link></li>
+            <li><Link href="#" className="hover:text-white">AI Resume Builder</Link></li>
+            <li><Link href="#" className="hover:text-white">AI Cover Letter</Link></li>
+            <li><Link href="#" className="hover:text-white">Job Recommender</Link></li>
           </ul>
         </div>
 
@@ -31,10 +31,10 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold text-white mb-3">Company</h3>
           <ul className="space-y-2 text-sm">
-            <li><Link href="/about" className="hover:text-white">About Us</Link></li>
-            <li><Link href="/features" className="hover:text-white">Features</Link></li>
-            <li><Link href="/contact" className="hover:text-white">Contact</Link></li>
-            <li><Link href="/privacy" className="hover:text-white">Privacy Policy</Link></li>
+            <li><Link href="#" className="hover:text-white">About Us</Link></li>
+            <li><Link href="#" className="hover:text-white">Features</Link></li>
+            <li><Link href="#" className="hover:text-white">Contact</Link></li>
+            <li><Link href="#" className="hover:text-white">Privacy Policy</Link></li>
           </ul>
         </div>
 
