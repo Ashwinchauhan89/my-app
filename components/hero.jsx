@@ -5,24 +5,24 @@ import { Button } from './ui/button'
 import Image from 'next/image'
 
 const HeroSection = () => {
-    const imageRef = useRef(null);
-    useEffect(() => {
-        const imageElement = imageRef.current;
+    // const imageRef = useRef(null);
+    // useEffect(() => {
+    //     const imageElement = imageRef.current;
 
-        const handleScroll = () => {
-            const scrollPosition = window.scrollY;
-            const scrollThreshold = 100;
+    //     const handleScroll = () => {
+    //         const scrollPosition = window.scrollY;
+    //         const scrollThreshold = 100;
 
-            if (scrollPosition > scrollThreshold) {
-                imageElement.classList.add("scrolled");
-            } else {
-                imageElement.classList.remove("scrolled");
-            }
-        };
+    //         if (scrollPosition > scrollThreshold) {
+    //             imageElement.classList.add("scrolled");
+    //         } else {
+    //             imageElement.classList.remove("scrolled");
+    //         }
+    //     };
 
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
+    //     window.addEventListener("scroll", handleScroll);
+    //     return () => window.removeEventListener("scroll", handleScroll);
+    // }, []);
 
     return (
         <section className="w-full pt-36 md:pt-48 pb-10">
@@ -50,7 +50,7 @@ const HeroSection = () => {
                         </Button>
                     </Link>
                 </div>
-                <div className="hero-image-wrapper mt-5 md:mt-0">
+                {/* <div className="hero-image-wrapper mt-5 md:mt-0">
                     <div ref={imageRef} className="hero-image">
                         <Image
                             src={"/banner6.png"}
@@ -61,7 +61,54 @@ const HeroSection = () => {
                             priority
                         />
                     </div>
+                </div> */}
+                <div className="hero-image-wrapper mt-5 md:mt-0">
+                    <div className="relative w-full mx-auto group">
+                        {/* Overlay Text */}
+                        <div className="
+          absolute inset-0 z-20 flex flex-col justify-center items-center text-center
+          text-white px-4
+        ">
+                            <h1 className="text-5xl font-bold md:text-6xl lg:text-7xl xl:text-8xl gradient-title animate-gradient opacity-100">
+                                SkillSync AI
+                            </h1>
+                            <p className="text-lg md:text-3xl mt-3 drop-shadow-lg">
+                                Your AI Career Coach for Professional Success
+                            </p>
+                        </div>
+                        {/* Poster Image (Desktop Only Before Hover) */}
+                        <Image
+                            src="/banner6.png"
+                            width={1280}
+                            height={450}
+                            alt="Hero Preview"
+                            className="
+        rounded-lg shadow-2xl border w-full h-auto
+        md:group-hover:opacity-0
+        transition-opacity duration-300
+      "
+                            priority
+                        />
+
+                        {/* Infinite Loop Video Animation */}
+                        <video
+                            src="/videomain.mp4"
+                            muted
+                            loop        // play again and again
+                            autoPlay    // start immediately
+                            playsInline // required for mobile autoplay
+                            preload="auto"
+                            className="
+        absolute inset-0 w-full h-450 rounded-lg shadow-2xl border 
+        opacity-100 md:opacity-0 md:group-hover:opacity-100
+        transition-opacity duration-300 object-cover
+      "
+                            onMouseEnter={(e) => e.target.play()}
+                            onMouseLeave={(e) => e.target.pause()}
+                        />
+                    </div>
                 </div>
+
             </div>
         </section>
     )
