@@ -20,10 +20,10 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold text-orange-700 mb-3">Quick Links</h3>
           <ul className="space-y-2 text-sm">
-            <li><Link href="#" className="hover:text-white">Home</Link></li>
-            <li><Link href="#" className="hover:text-white">AI Resume Builder</Link></li>
-            <li><Link href="#" className="hover:text-white">AI Cover Letter</Link></li>
-            <li><Link href="#" className="hover:text-white">Job Recommender</Link></li>
+            <li><Link href="/dashboard" className="hover:text-white">Industry Insights</Link></li>
+            <li><Link href="/resume" className="hover:text-white">AI Resume Builder</Link></li>
+            <li><Link href="/ai-cover-letter" className="hover:text-white">AI Cover Letter</Link></li>
+            <li><Link href="/interview" className="hover:text-white">Mock Interview</Link></li>
           </ul>
         </div>
 
@@ -42,11 +42,11 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold text-orange-700 mb-3">Follow Us</h3>
           <div className="flex items-center space-x-4 mt-2">
-            <Link href="#" className="hover:text-white"><Facebook size={20} /></Link>
-            <Link href="#" className="hover:text-white"><Instagram size={20} /></Link>
-            <Link href="#" className="hover:text-white"><Twitter size={20} /></Link>
-            <Link href="#" className="hover:text-white"><Github size={20} /></Link>
-            <Link href="#" className="hover:text-white"><Linkedin size={20} /></Link>
+            <Link href="https://www.facebook.com/ashwin.chauhan.33633344" className="hover:text-white"><Facebook size={20} /></Link>
+            <Link href="https://www.instagram.com/ashwinchauhan89" className="hover:text-white"><Instagram size={20} /></Link>
+            <Link href="https://x.com/AshwinC37780945" className="hover:text-white"><Twitter size={20} /></Link>
+            <Link href="https://github.com/Ashwinchauhan89" className="hover:text-white"><Github size={20} /></Link>
+            <Link href="https://www.linkedin.com/in/ashwin-chauhan-98648928b/" className="hover:text-white"><Linkedin size={20} /></Link>
             
           </div>
           <p className="mt-3 text-sm leading-relaxed">

@@ -13,6 +13,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { QuoteIcon } from "./lib/qute";
 import { stats } from "@/data/stats";
+import { AIChatbot } from "@/components/ChatBot";
 
 export default function Home() {
   return (
@@ -223,6 +224,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* ChatBot */}
+      <AIChatbot />
 
       
 
