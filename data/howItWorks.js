@@ -1,25 +1,30 @@
-import { UserPlus, FileEdit, Users, LineChart } from "lucide-react";
+import { UserPlus, FileEdit, Users, LineChart, Target, BarChart, FileText } from "lucide-react";
+import { colorThemes } from "./theme.js";
 
 export const howItWorks = [
+  
   {
-    title: "Professional Onboarding",
-    description: "Share your industry and expertise for personalized guidance",
-    icon: <UserPlus className="w-8 h-8 text-primary" />,
+    icon: UserPlus,
+    title: "1. Create Profile",
+    description: "Sign up and input your career goals and current experience level.",
+    theme: "blue"
   },
   {
-    title: "Craft Your Documents",
-    description: "Create ATS-optimized resumes and compelling cover letters",
-    icon: <FileEdit className="w-8 h-8 text-primary" />,
+    icon: FileText,
+    title: "2. Upload Resume",
+    description: "Our AI scans your resume to understand your background and strengths.",
+    theme: "purple"
   },
   {
-    title: "Prepare for Interviews",
-    description:
-      "Practice with AI-powered mock interviews tailored to your role",
-    icon: <Users className="w-8 h-8 text-primary" />,
+    icon: BarChart,
+    title: "3. Get Insights",
+    description: "Receive detailed analysis and a personalized growth roadmap.",
+    theme: "teal"
   },
   {
-    title: "Track Your Progress",
-    description: "Monitor improvements with detailed performance analytics",
-    icon: <LineChart className="w-8 h-8 text-primary" />,
-  },
+    icon: Target,
+    title: "4. Track Progress",
+    description: "Monitor your improvements and celebrate milestones as you grow.",
+    theme: "orange"
+  }
 ];
