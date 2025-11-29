@@ -1,3 +1,4 @@
+'use client';
 import HeroSection from "@/components/hero";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button, buttonVariants } from "@/components/ui/button";
@@ -24,14 +25,14 @@ export default function Home() {
       <section className="w-full py-12 md:py-24 lg:py-32 bg-background">
          <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4 bg-gradient-to-r from-blue-400 via-purple-400 to-orange-400 bg-clip-text text-transparent">
-              Powerful Features for Your Career Growth
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4 text-white">
+              Powerful Features for Growth
             </h2>
-            <p className="text-lg text-slate-400">
-              Everything you need to land your next role and advance your career, all in one platform.
+            <p className="text-lg text-blue-700">
+              Everything you need to advance your career, all in one platform.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {features.map((feature, index) => {
               const theme = colorThemes[feature.theme];
               const Icon = feature.icon;
@@ -62,6 +63,9 @@ export default function Home() {
 
       {/* Stats Section */}
       <section className="w-full py-20 border-y border-slate-800 relative">
+        <h2 className="text-3xl md:text-4xl font-bold tracking-tight  text-white text-center mx-auto mb-16 center">
+              Our Impact in Numbers
+            </h2>
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 max-w-6xl mx-auto">
              {stats.map((stat, index) => {
@@ -120,7 +124,7 @@ export default function Home() {
 
 
       {/* Testimonials Section */}
-    <section className="w-full py-20  border-y border-slate-800">
+    <section className="w-full py-20 border-slate-800">
         <div className="container mx-auto px-4 md:px-6">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-white">
             What Our Users Say

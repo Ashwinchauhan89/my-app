@@ -6,6 +6,39 @@ export default {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+   safelist: [
+    // gradients
+    "from-blue-500", "via-blue-400", "to-cyan-400",
+    "from-purple-500", "via-violet-500", "to-fuchsia-500",
+    "from-teal-400", "via-emerald-400", "to-green-400",
+    "from-orange-500", "via-amber-500", "to-yellow-500",
+    "from-indigo-500", "via-blue-600", "to-indigo-400",
+    "from-pink-500", "via-rose-500", "to-red-400",
+
+    // text colors
+    "text-blue-400", "text-purple-400", "text-teal-400",
+    "text-orange-400", "text-indigo-400", "text-pink-400",
+
+    // glow backgrounds
+    "bg-blue-500/10", "bg-purple-500/10", "bg-teal-500/10",
+    "bg-orange-500/10", "bg-indigo-500/10", "bg-pink-500/10",
+
+    // solid
+    "bg-blue-500", "bg-purple-500", "bg-teal-500",
+    "bg-orange-500", "bg-indigo-500", "bg-pink-500",
+
+    // borders
+    "group-hover:border-blue-500/50",
+    "group-hover:border-purple-500/50",
+    "group-hover:border-teal-500/50",
+    "group-hover:border-orange-500/50",
+    "group-hover:border-indigo-500/50",
+    "group-hover:border-pink-500/50",
+
+    // icons text colors
+    "text-blue-400", "text-purple-400", "text-teal-400",
+    "text-orange-400", "text-indigo-400", "text-pink-400",
+  ],
   theme: {
   	extend: {
   		colors: {
