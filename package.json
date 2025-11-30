@@ -7,14 +7,11 @@
     "build": "prisma generate && next build",
     "postinstall": "prisma generate"
   },
+
   "prisma": {
-    "engines": {
-      "binaryTargets": [
-        "native",
-        "rhel-openssl-3.0.x"
-      ]
-    }
+    "schema": "prisma/schema.prisma"
   },
+  
   "dependencies": {
     "@clerk/nextjs": "^6.34.0",
     "@clerk/themes": "^2.4.29",
