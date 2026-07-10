@@ -37,118 +37,106 @@ The application is built with a modern, scalable architecture using **Next.js 15
 
 # ✨ Features
 
-## 🤖 AI Resume Analyzer
+## 🤖 AI Resume Analyzer & Builder
 
-- ATS Resume Scoring
-- Resume Improvement Suggestions
-- Resume Parsing
-- Skill Detection
-- Experience Analysis
-- Missing Keyword Detection
+Optimize your resume with AI-powered insights and improve your chances of passing Applicant Tracking Systems (ATS).
+
+- 📊 ATS Resume Score Analysis
+- 📝 AI-Powered Resume Improvement Suggestions
+- 📄 Intelligent Resume Parsing
+- 🎯 Skill Extraction & Classification
+- 💼 Experience & Project Analysis
+- 🔍 Missing Keyword Detection
+- 📈 Resume Strength & Weakness Report
+- ⚡ ATS Keyword Optimization
+- 🧠 Personalized Career Recommendations
+- 📥 Resume History & Version Management
 
 ---
 
 ## 🎯 AI Career Guidance
 
-- Personalized Career Recommendations
-- Career Roadmap Generation
-- Skill Gap Analysis
-- Learning Path Suggestions
-- Career Growth Tracking
+Receive personalized career advice based on your skills, education, interests, and current industry trends.
+
+- 🎯 Personalized Career Recommendations
+- 🛣️ AI-Generated Career Roadmap
+- 📊 Skill Gap Analysis
+- 📚 Personalized Learning Path Suggestions
+- 🚀 Career Growth Tracking
+- 💡 Recommended Certifications
+- 📈 Industry Trend Analysis
+- 💼 Job Role Matching
+- 🌍 Emerging Technology Insights
+- 🎓 Career Readiness Assessment
 
 ---
 
 ## 📄 AI Cover Letter Generator
 
-- Personalized Cover Letters
-- Job-Specific Content
-- Professional Formatting
-- One-click Generation
+Generate professional, job-specific cover letters in seconds using Generative AI.
+
+- ✍️ Personalized AI Cover Letters
+- 💼 Job Description-Based Generation
+- 🎯 Company-Specific Customization
+- 📄 Professional Formatting
+- ⚡ One-Click Generation
+- 📝 Multiple Cover Letter Templates
+- 🔄 Regenerate & Improve Content
+- 📥 Easy Copy & Download
+- 🌍 ATS-Friendly Writing Style
 
 ---
 
 ## 🎤 AI Mock Interview
 
-- HR Interview Questions
-- Technical Interview Questions
-- AI Evaluation
-- Feedback & Suggestions
-- Performance Reports
+Practice realistic interviews with AI and receive detailed feedback to improve your confidence.
+
+- 🤖 AI-Generated HR Interview Questions
+- 💻 Technical Interview Practice
+- 🧠 Behavioral Interview Simulation
+- 🎯 Role-Specific Interview Questions
+- 📊 AI Performance Evaluation
+- 📝 Instant Feedback & Suggestions
+- ⭐ Overall Performance Score
+- 📈 Strength & Weakness Analysis
+- 🎤 Confidence Improvement Tips
+- 📚 Interview History & Progress Tracking
+---
+
+# 📸 Screenshots
+
+| Home Page | Dashboard |
+|-----------|-----------|
+| ![Home](![alt text](screenshots/image.png)) | ![Dashboard](![alt text](screenshots/image2.png)) |
+
+| AI Resume Analyzer | AI Mock Interview |
+|--------------------|-------------------|
+| ![Resume](![alt text](screenshots/image3.png)) | ![Interview](![alt text](screenshots/image4.png)) |
+
+| AI Cover Letter | Industry Insights |
+|-----------------|-------------------|
+| ![Cover Letter](![alt text](screenshots/image5.png)) | ![Insights](![alt text](screenshots/image6.png)) |
 
 ---
 
-## 📊 Industry Insights
+## 📊 Technology Summary
 
-- Trending Technologies
-- Job Market Analysis
-- Salary Insights
-- In-Demand Skills
-- Weekly AI Updates
-
+| Category | Technologies |
+|----------|--------------|
+| **Frontend** | Next.js 15, React 19, Tailwind CSS, Shadcn UI, Framer Motion |
+| **Backend** | Next.js Server Actions, Prisma ORM, REST APIs |
+| **Database** | Neon PostgreSQL |
+| **Authentication** | Clerk |
+| **Artificial Intelligence** | Google Gemini AI |
+| **Background Jobs** | Inngest |
+| **Deployment** | Vercel |
+| **Version Control** | Git & GitHub |
 ---
 
-## 👤 User Dashboard
-
-- Resume Library
-- Career Reports
-- Interview History
-- Cover Letter History
-- Career Progress Tracking
-
----
-
-# 🛠 Tech Stack
-
-## Frontend
-
-- Next.js 15
-- React 19
-- Tailwind CSS
-- Shadcn UI
-- Framer Motion
-
-## Backend
-
-- Next.js Server Actions
-- Prisma ORM
-- PostgreSQL (Neon)
-- Clerk Authentication
-
-## Artificial Intelligence
-
-- Google Gemini AI
-
-## Background Processing
-
-- Inngest
-
-## Deployment
-
-- Vercel
-
----
 
 # 🏗 Architecture
 
-```text
-                ┌─────────────────────────┐
-                │        User             │
-                └──────────┬──────────────┘
-                           │
-                    Next.js App Router
-                           │
-        ┌──────────────────┼──────────────────┐
-        │                  │                  │
-   Clerk Auth        Server Actions      Gemini AI
-        │                  │                  │
-        └──────────────────┼──────────────────┘
-                           │
-                     Prisma ORM
-                           │
-                    Neon PostgreSQL
-                           │
-                    Inngest Background Jobs
-```
+![alt text](screenshots/image7.png)
 
 ---
 
@@ -183,61 +171,6 @@ SkillSyncAI/
 └── README.md
 ```
 
-# 💡 Why SkillSyncAI?
-
-✅ AI-Powered Career Guidance
-
-✅ ATS Resume Analysis
-
-✅ AI Mock Interviews
-
-✅ Intelligent Career Recommendations
-
-✅ Skill Gap Analysis
-
-✅ AI Cover Letter Generation
-
-✅ Modern Full Stack Architecture
-
-✅ Secure Authentication
-
-✅ Responsive UI
-
-✅ SEO Optimized
-
----
-
-# 📈 Performance
-
-- Server Side Rendering
-- App Router
-- Server Actions
-- Lazy Loading
-- Image Optimization
-- Responsive Design
-- Type-Safe Database
-- Fast API Response
-- Scalable Architecture
-
----
-
-# 🎯 Future Enhancements
-
-- AI Voice Interview
-- Resume PDF Export
-- Job Recommendation Engine
-- LinkedIn Profile Analyzer
-- AI Career Chatbot
-- Company Interview Database
-- Multi-language Support
-- Admin Dashboard
-- Analytics Dashboard
-- Mobile Application
-
----
-
-
-
 ---
 
 # 📚 Tech Keywords
@@ -255,20 +188,6 @@ Artificial Intelligence • Google Gemini AI • Next.js • React • JavaScrip
 
 ---
 
-# ⭐ Show Your Support
-
-If you found this project useful,
-
-⭐ Star this repository
-
-🍴 Fork the repository
-
-🛠️ Contribute
-
-📢 Share it with others
-
----
-
 # 📄 License
 
 This project is licensed under the **MIT License**.
@@ -277,7 +196,6 @@ This project is licensed under the **MIT License**.
 
 <div align="center">
 
-### ⭐ If you like this project, don't forget to Star the Repository ⭐
 
 Made with ❤️ by **Ashwin Chauhan**
 
