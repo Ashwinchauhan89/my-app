@@ -17,38 +17,33 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <ClerkProvider
-      appearance={{
-        baseTheme: "dark",
-      }}
-    >
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className}`}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {/*Header */}
-          <Header />
+        <ClerkProvider appearance={{ baseTheme: dark }}>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="dark"
+            enableSystem
+            disableTransitionOnChange
+          >
+            {/*Header */}
+            <Header />
 
-          <main className="min-h-screen">
-           {children}
-           <Toaster richColors/>
-          </main>
+            <main className="min-h-screen">
+             {children}
+             <Toaster richColors/>
+            </main>
 
-          {/*Footer */}
-          {/* <footer className="bg-muted/50 py-10">
-            <div className="container mx-auto px-4 text-center text-gray-200">
-              <p>Made by Ashwin.All right Reverserved</p>
-            </div>
-          </footer> */}
-          <Footer />
-        </ThemeProvider>
-
+            {/*Footer */}
+            {/* <footer className="bg-muted/50 py-10">
+              <div className="container mx-auto px-4 text-center text-gray-200">
+                <p>Made by Ashwin.All right Reverserved</p>
+              </div>
+            </footer> */}
+            <Footer />
+          </ThemeProvider>
+        </ClerkProvider>
       </body>
     </html>
-    </ClerkProvider>
   );
 }

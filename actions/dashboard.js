@@ -3,6 +3,7 @@
 import { db } from "@/lib/prisma";
 import { auth } from "@clerk/nextjs/server";
 import { GoogleGenerativeAI } from "@google/generative-ai";
+import { ensureUser } from "@/lib/checkUser";
 
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
@@ -47,6 +48,8 @@ export async function getIndustryInsights() {
     const { userId } = await auth();
     if (!userId) throw new Error("Unauthorized");
   
+    await ensureUser();
+
     const user = await db.user.findUnique({
       where: { clerkUserId: userId },
       include: {
